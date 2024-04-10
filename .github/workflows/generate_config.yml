@@ -1,0 +1,34 @@
+name: Generate Config json File
+
+on: create
+
+jobs:
+    create-config:
+        if: github.ref == 'refs/heads/main'
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout content
+              uses: actions/checkout@v4
+            
+            - name: Create config.json
+              run: |
+                echo '{
+                  "publicProps": {
+                    "title": "Add a title for your lesson/project",
+                    "repoName": "${{ github.event.repository.name }}",
+                    "repoOwner": "esciencecenter-digital-skills",
+                    "repoTag": "main",
+                    "organization": "Netherlands eScience Center",
+                    "categoryOrder": ["Category1", "Category2"]
+                  }
+                }' > config.json
+
+            - name: Commit and push config.json
+              run: |
+                git config --global user.email "action@github.com"
+                git config --global user.name "GitHub Action"
+                git add config.json
+                git commit -m "Create config.json" || exit 0   # Exits gracefully if there's nothing to commit
+                git push
