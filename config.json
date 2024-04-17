@@ -6,11 +6,8 @@
     "repoTag": "main",
     "organization": "Netherlands eScience Center",
     "categoryOrder": [
-      "Getting started",
-      "Reusability",
-      "Publishing & Citing",
-      "Development",
-      "Upcoming (under construction)"
+      "Category1",
+      "Category2"
     ]
   }
 }
