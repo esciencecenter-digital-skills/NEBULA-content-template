@@ -1,11 +1,10 @@
 name: Generate Config json File
 
-on: create
+on: 
+  workflow_dispatch:
 
 jobs:
     create-config:
-        if: github.ref == 'refs/heads/main'
-
         runs-on: ubuntu-latest
 
         steps:
