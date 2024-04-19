@@ -11,7 +11,7 @@ After instantiation, you need to set up your repo's GitHub Pages. Follow these s
 - Return to your main repository page.
 - In the `About` section of your repository details, find the `Website` field and select `Use your GitHub Pages website`.
 
-## Add the title of your lesson and additional sections.
+## Add the title of your lesson and additional sections
 This can be configured through the `config.json` file. Below is an example of its contents:
 ```
 {
