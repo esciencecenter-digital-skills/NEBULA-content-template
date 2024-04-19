@@ -1,10 +1,10 @@
 {
-    "publicProps": {
-        "title": "Nebula content template lesson",
-        "repoName": "Nebula-content-template",
-        "repoOwner": "esciencecenter-digital-skills",
-        "repoTag": "main",
-        "organization": "Netherlands eScience Center",
-        "categoryOrder": ["Category1", "Category2"]
-    }
+  "publicProps": {
+    "title": "Add a title for your lesson/project",
+    "repoName": "NEBULA-content-template",
+    "repoOwner": "esciencecenter-digital-skills",
+    "repoTag": "main",
+    "organization": "Netherlands eScience Center",
+    "categoryOrder": ["Category1", "Category2"]
+  }
 }
