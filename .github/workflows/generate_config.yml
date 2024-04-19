@@ -1,7 +1,9 @@
 name: Generate Config json File
 
-on: 
-  workflow_dispatch:
+on:
+  push:
+    branches:
+      - main
 
 jobs:
     create-config:
