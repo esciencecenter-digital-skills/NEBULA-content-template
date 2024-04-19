@@ -1,8 +1,6 @@
 # NEBULA-content-template
 This template repository can be used to create an easily maintainable, version-controllable, web-based lesson collection to be deployed with the [NEBULA framework](https://github.com/esciencecenter-digital-skills/NEBULA).
 
-# Setup
-
 ## Repo instantiation
 To create a custom-made lesson repository, click the `Use this template` button located at the top right of this page.
 
