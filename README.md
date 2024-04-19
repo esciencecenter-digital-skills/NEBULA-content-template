@@ -27,7 +27,7 @@ This can be configured through the `config.json` file. Below is an example of it
 ```
 You can modify the `"title"` field to reflect your specific topic and add new sections to your lesson under `"categoryOrder"`.
 
-The `"repoName"` field is automatically updated to the name of your new repository using the (generate_config.yml)[https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml] file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
+The `"repoName"` field is automatically updated to the name of your new repository using the [generate_config.yml](https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml) file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
 
 ## Add new modules
 This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions.
