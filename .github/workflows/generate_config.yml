@@ -1,9 +1,9 @@
-name: Generate Config json File
+name: Generate Config json File (Execute it only upon repository initialisation)
 
 on:
   push:
     branches:
-      - main
+      - '**'
 
 permissions: write-all
 
@@ -35,3 +35,10 @@ jobs:
                 git add config.json
                 git commit -m "Create config.json" || exit 0   # Exits gracefully if there's nothing to commit
                 git push
+
+            - name: Disable this workflow once it has been run once on instantiation
+              shell: bash
+              run: |
+                gh workflow disable -R $GITHUB_REPOSITORY "${{ github.workflow }}"
+              env:
+                GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
