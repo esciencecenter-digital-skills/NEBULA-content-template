@@ -1,3 +1,9 @@
+---
+title: Module 2
+type: slides
+order: 1
+---
+
 <!-- .slide: data-state="title" -->
 
 # Module 2
@@ -6,7 +12,7 @@
 
 <!-- .slide: data-state="standard" -->
 
-## Tile of the first slide
+## Title of the first slide
 
 <center>
 <img src="media/fig-dummy.png" width="55%">
