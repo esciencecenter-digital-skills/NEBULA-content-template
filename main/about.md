@@ -2,7 +2,7 @@
 title: About
 ---
 
-## About the lesson
+## About this lesson/project
 
 Provide details about the project and lesson.
 
