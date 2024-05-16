@@ -30,7 +30,7 @@ You can modify the `"title"` field to reflect your specific topic and add new se
 The `"repoName"` and `"baseURL"` fields are automatically updated to the name of your new repository using the [generate_config.yml](https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml) file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
 
 ## Adding new modules
-This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions.
+This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions. See also [here](ADD_MODULES.md) for information on how to create new modules.
 
 ## Suggestions and further info
 Suggestions are always welcome.
