@@ -20,9 +20,9 @@ jobs:
                 echo '{
                   "publicProps": {
                     "title": "Add a title for your lesson/project",
+                    "baseURL": "${{ github.event.repository.name }}",
                     "repoName": "${{ github.event.repository.name }}",
                     "repoOwner": "esciencecenter-digital-skills",
-                    "repoTag": "main",
                     "organization": "Netherlands eScience Center",
                     "categoryOrder": ["Category1", "Category2"]
                   }
