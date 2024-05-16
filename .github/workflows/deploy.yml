@@ -1,7 +1,7 @@
 name: Deploy to gh-pages
 
 on: 
-  [push, release, workflow_dispatch]
+  [push, release]
 env:
   NUXT_APP_CDN_URL: https://esciencecenter-digital-skills.github.io/${{ github.event.repository.name }}
 jobs:
