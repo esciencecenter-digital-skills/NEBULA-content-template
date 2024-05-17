@@ -12,6 +12,6 @@ jobs:
     with:
       content_organization: esciencecenter-digital-skills
       content_repository: ${{ github.event.repository.name }}
-      content_ref: main
+      content_ref: ${{ GITHUB_REF }}
       base_url: ${{ github.event.repository.name }}
       nebula_ref: v0.4.2
