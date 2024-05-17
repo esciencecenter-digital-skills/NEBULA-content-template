@@ -1,13 +1,10 @@
 {
   "publicProps": {
     "title": "Add a title for your lesson/project",
+    "baseURL": "NEBULA-content-template",
     "repoName": "NEBULA-content-template",
     "repoOwner": "esciencecenter-digital-skills",
-    "repoTag": "main",
     "organization": "Netherlands eScience Center",
-    "categoryOrder": [
-      "Category1",
-      "Category2"
-    ]
+    "categoryOrder": ["Category1", "Category2"]
   }
 }
