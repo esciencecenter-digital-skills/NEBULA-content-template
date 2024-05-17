@@ -1,9 +1,11 @@
 ---
-id: 0
+id: 1
 trl: medium
-category: Category1
-title: Title of module 1
+category: Category2
+title: Title of module 2
 author: eScience Center
 thumbnail: "nlesc-dummy.png"
 visibility: visible
 ---
+
+# Category 2

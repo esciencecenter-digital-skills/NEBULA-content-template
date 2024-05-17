@@ -17,9 +17,9 @@ This can be configured through the `config.json` file. Below is an example of it
 {
   "publicProps": {
     "title": "Add a title for your lesson/project",
+    "baseURL": "NEBULA-content-template",
     "repoName": "NEBULA-content-template",
     "repoOwner": "esciencecenter-digital-skills",
-    "repoTag": "main",
     "organization": "Netherlands eScience Center",
     "categoryOrder": ["Category1", "Category2"]
   }
@@ -27,9 +27,9 @@ This can be configured through the `config.json` file. Below is an example of it
 ```
 You can modify the `"title"` field to reflect your specific topic and add new sections to your lesson under `"categoryOrder"`.
 
-The `"repoName"` field is automatically updated to the name of your new repository using the [generate_config.yml](https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml) file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
+The `"repoName"` and `"baseURL"` fields are automatically updated to the name of your new repository using the [generate_config.yml](https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml) file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
 
-## Add new modules
+## Adding new modules
 This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions.
 
 ## Suggestions and further info
