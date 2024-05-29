@@ -31,6 +31,7 @@ The `"repoName"` and `"baseURL"` fields are automatically updated to the name of
 
 ## Adding new modules
 This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions.
+See also [NEBULA-docs](https://github.com/esciencecenter-digital-skills/NEBULA-docs) for information on how to create new modules.
 
 ## Suggestions and further info
 Suggestions are always welcome.
