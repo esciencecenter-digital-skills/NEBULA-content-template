@@ -1,14 +1,14 @@
 ---
-title: Module 1
+title: Module 2
 type: slides
 order: 1
 ---
 
 <!-- .slide: data-state="title" -->
 
-# Module 1
+# Module 2
 
----
+===
 
 <!-- .slide: data-state="standard" -->
 
@@ -22,7 +22,7 @@ Note:
 
 Add notes to the presenter...
 
----
+===
 
 <!-- .slide: data-state="keepintouch" -->
 
