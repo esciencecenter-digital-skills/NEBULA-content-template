@@ -1,9 +1,12 @@
-name: Deploy to gh-pages
+name: Clean install and build check with content (no deployment)
 
-on: 
-  release:
-    types: [published]
-  workflow_dispatch:
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy_with_NEBULA:
@@ -15,4 +18,4 @@ jobs:
       content_repository: ${{ github.event.repository.name }}
       content_ref: ${{ github.sha }}
       nebula_ref: v1.0.0
-      deploy_to_ghpages: true
+      deploy_to_ghpages: false
