@@ -1,6 +1,8 @@
 # NEBULA-content-template
 This template repository can be used to create an easily maintainable, version-controllable, web-based lesson collection to be deployed with the [NEBULA framework](https://github.com/esciencecenter-digital-skills/NEBULA).
 
+For elaborate setup instructions and other documentation, see the [NEBULA documentation](https://github.com/esciencecenter-digital-skills/NEBULA-docs)
+
 ## Repo instantiation
 To create a custom-made lesson repository, click the `Use this template` button located at the top right of this page.
 
@@ -29,16 +31,44 @@ You can modify the `"title"` field to reflect your specific topic and add new se
 
 The `"repoName"` and `"baseURL"` fields are automatically updated to the name of your new repository using the [generate_config.yml](https://github.com/esciencecenter-digital-skills/NEBULA-content-template/blob/main/.github/workflows/generate_config.yml) file. The corresponding workflow is triggered only once upon repository instantiation and is subsequently disabled.
 
-## Adding new modules
-This repository includes dummy model modules as templates that you can follow to create your own modules. Please, follow the recommended formats and file extensions.
-See also [NEBULA-docs](https://github.com/esciencecenter-digital-skills/NEBULA-docs) for information on how to create new modules.
 
-## Suggestions and further info
-Suggestions are always welcome.
-For this and any other issues, we invite you contribute to the project by creating `Issues` and `Pull requests`.
-If needed, you can also contact us directly:
-- Carlos M. R. Rocha: c.rocha@esciencecenter.nl
-- Jaro Camphuijsen: j.camphuijsen@esciencecenter.nl
-- Robin Richardson: r.richardson@esciencecenter.nl
+## Quick local setup
 
+More detailed information about local setup can be found in the [NEBULA local rendering docs](https://github.com/esciencecenter-digital-skills/NEBULA-docs/blob/main/local-rendering.md)
 
+### Content directory/repository
+
+To use NEBULA to build the content in this repository locally, you will need to clone this repository and the NEBULA repository:
+
+```bash
+git clone git@github.com:{GITHUB_ORGANIZATION}/{GITHUB_REPOSITORY_NAME}.git
+git clone git@github.com:esciencecenter-digital-skills/NEBULA.git
+```
+
+### Link to the content repository
+
+To make sure that NEBULA knows where to find the content, we create the following environment variable:
+
+```bash
+export CONTENT_PATH="~/path/to/your/content/repository"
+```
+
+### Install dependencies
+
+Install the dependencies using the [node package manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm):
+
+```bash
+# node package manager
+npm install
+```
+
+### Local development build
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# node package manager
+npm run dev
+```
+
+Now you can open a browser and navigate to `http://localhost:3000/{YOUR_BASE_URL}`
